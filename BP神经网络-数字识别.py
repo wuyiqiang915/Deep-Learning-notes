@@ -22,7 +22,7 @@ class NeuralNetwork:
         # 添加偏置
         temp = np.ones([X.shape[0], X.shape[1] + 1])
         temp[:, 0:-1] = X
-        X = temp
+        X = temp　
 
         for n in range(epochs + 1):
             i = np.random.randint(X.shape[0])  # 随机选取一个数据
