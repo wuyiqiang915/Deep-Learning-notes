@@ -34,7 +34,7 @@ def gradient_descent_runner(x_data, y_data, b, k, lr, epochs):
     for i in range(epochs):
         b_grad = 0  # 设置变量存放临时数据
         k_grad = 0
-        # 计算梯度的综合在求平均
+        # 计算梯度的总和再求平均
         for j in range(0, len(x_data)):
             b_grad += (1 / m) * (((k * x_data[j]) + b) - y_data[j])
             k_grad += (1 / m) * (((k * x_data[j]) + b) - y_data[j]) * x_data[j]
